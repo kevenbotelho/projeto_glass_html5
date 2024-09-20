@@ -1,11 +1,19 @@
 @charset "UTF-8";
 @font-face {
     font-family: bubble;
-    src: url("../_fonts/bubblegum-sans-regular.otf");
+    src: url("../fonts/bubblegum-sans-regular.otf");
 }
 
 *{
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    text-decoration: underline;
 }
 
 body{
@@ -14,7 +22,7 @@ body{
     max-width: 850px;
     margin: auto;
 }
-header{
+header#cabecalho{
     padding: 20px;
 
     border-bottom: 1px solid black;
@@ -134,6 +142,34 @@ main{
 
     border-right: 1px solid;
 }
+article#noticia-principal header#cabecalho-artigo h1{
+    font-family: bubble;
+    font-size: 20pt;
+    color: #606060;
+    
+}
+article#noticia-principal header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #7d7d7d;
+    background-color: unset;
+    margin-bottom: 0;
+    
+}
+article#noticia-principal header#cabecalho-artigo h3{
+    font-size: 12px;
+    color: gray;
+    
+}
+.direita{
+    text-align: right;
+}
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: rgb(75, 75, 75);
+    background-color: gray;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
 aside{
     background-color: white;
     display: block;
@@ -142,6 +178,17 @@ aside{
 
     padding: 20px;
     float: right;
+}
+aside h1{
+    font-family: bubble;
+    font-size: 20pt;
+    color: #606060;
+}
+aside h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
 }
 footer{
     display: block;
